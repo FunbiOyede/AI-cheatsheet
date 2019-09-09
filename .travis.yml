@@ -1,0 +1,12 @@
+langauge: node_js
+node_js:
+  - 12.6.0
+
+cache: yarn
+
+install:
+  - yarn install
+
+build:
+  - yarn test
+  - yarn run build

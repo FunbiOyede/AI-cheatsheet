@@ -4,9 +4,11 @@ class Terms extends Component {
   render() {
     return (
       <ContextConsumer>
-        {context => {
-          return <p>{context.terminologies.name}</p>;
-        }}
+        {context => (
+          <React.Fragment>
+            <p>{context.terminologies.name}</p>
+          </React.Fragment>
+        )}
       </ContextConsumer>
     );
   }
