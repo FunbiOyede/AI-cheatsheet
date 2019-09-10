@@ -1,17 +1,18 @@
-import React, { Component } from "react";
-import ContextConsumer from "../../containers/Contexts/UserContexts";
-class Terms extends Component {
-  render() {
-    return (
-      <ContextConsumer>
-        {context => (
-          <React.Fragment>
-            <p>{context.terminologies.name}</p>
-          </React.Fragment>
-        )}
-      </ContextConsumer>
-    );
-  }
-}
+import React from "react";
+import { Consumer } from "../../containers/Contexts/Contexts";
+const Terms = () => (
+  <Consumer>
+    {context => (
+      <p>
+        {context.state.terminologies.map(term => (
+          <div>
+            <h3>{term.title}</h3>
+            <div>{term.definition}</div>
+          </div>
+        ))}
+      </p>
+    )}
+  </Consumer>
+);
 
 export default Terms;

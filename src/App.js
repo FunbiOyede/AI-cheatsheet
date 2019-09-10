@@ -1,14 +1,14 @@
 import React from "react";
 import "./App.scss";
-import UserContexts from "./containers/Contexts/UserContexts";
+import UseContext from "./containers/UseContext/UseContext";
 
 import Terms from "./components/Terms/Terms";
 
 function App() {
   return (
-    <UserContexts>
+    <UseContext>
       <Terms />
-    </UserContexts>
+    </UseContext>
   );
 }
 
