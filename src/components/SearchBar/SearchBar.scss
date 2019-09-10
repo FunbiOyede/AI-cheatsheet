@@ -1,0 +1,22 @@
+$primaryColor: #fff;
+$secondaryColor: #fff;
+$border: transparent;
+
+.SearchBar {
+  margin: 20px 20%;
+  width: 50%;
+  text-align: center;
+  outline: none;
+  border-top-color: $border;
+  border-left-color: $border;
+  border-right-color: $border;
+  background-color: transparent;
+  color: white;
+  font-size: 14px;
+  border-bottom: 2px solid $secondaryColor;
+}
+
+.SearchBar::placeholder {
+  color: #fff;
+  font-size: 14px;
+}

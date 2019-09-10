@@ -1,16 +1,17 @@
 import React from "react";
 import { Consumer } from "../../containers/Contexts/Contexts";
-const Terms = () => (
+import Term from "../Term/Term";
+import "./Terms.scss";
+const Terms = props => (
   <Consumer>
     {context => (
-      <p>
+      <div className="Terms">
         {context.state.terminologies.map(term => (
-          <div>
-            <h3>{term.title}</h3>
-            <div>{term.definition}</div>
+          <div key={term.id}>
+            <Term title={term.title} definition={term.definition} />
           </div>
         ))}
-      </p>
+      </div>
     )}
   </Consumer>
 );
