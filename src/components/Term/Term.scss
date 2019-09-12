@@ -1,12 +1,20 @@
-.Term:nth-child(3n + 1) {
-  float: right;
-}
-
 .Term {
   color: white;
 
-  width: 35%;
-  height: 40%;
+  padding: 15px;
+  height: calc(100% - 60px);
   margin-bottom: 20px;
-  padding: 10px;
+  width: 20%;
+  padding: 10px 0;
+  box-sizing: border-box;
 }
+
+// top: 60px;
+//     left: 260px;
+//     border-bottom: 1px solid #E3E3E3;
+//     padding: 10px 0;
+//     box-sizing: border-box;
+//     position: relative;
+//     overflow: scroll;
+//     width: calc(100% - 260px);
+//     height: calc(100% - 60px
