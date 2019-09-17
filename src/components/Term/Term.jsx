@@ -1,6 +1,6 @@
 import React from "react";
 import "./Term.scss";
-
+import PropType from "prop-types";
 const Term = props => (
   <div className="Term">
     <h3
@@ -15,4 +15,8 @@ const Term = props => (
   </div>
 );
 
+Term.propType = {
+  title: PropType.string,
+  definition: PropType.string
+};
 export default Term;
